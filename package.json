@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src/ -d dist/",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "yarn test -- --coverage",
+    "ci": "yarn run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "devDependencies": {
     "babel": "^6.23.0",
