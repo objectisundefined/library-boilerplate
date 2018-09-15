@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '9'
+cache:
+  yarn: true
+script: "npm install --save-dev && npm run test"
+after_script: "npm run test -- --coverage"
