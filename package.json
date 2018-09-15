@@ -1,0 +1,22 @@
+{
+  "name": "library-boilerplate",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "repository": "https://github.com/objectisundefined/library-boilerplate",
+  "author": "objectisundefined <2535612040@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/ -d dist/",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0"
+  }
+}
